@@ -5,3 +5,5 @@ authors = ["RobbieClarken <robbie.clarken@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+macros-impl = { path = "../macros-impl" }
+proc-macro-hack = "0.5.11"

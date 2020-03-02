@@ -1,5 +1,17 @@
+#![allow(unused_imports)]
+
 mod mod_a {
-    pub(crate) use std::format as xyz;
+    mod name_of_proc_macro {}
+
+    use crate::mod_b::*;
+
+    mod mod_c {
+        fn _foobar() {
+            use super::name_of_proc_macro;
+        }
+    }
 }
 
-mod mod_b;
+mod mod_b {
+    pub(crate) use std::format as name_of_proc_macro; // DELETE TO TRIGGER ICE
+}

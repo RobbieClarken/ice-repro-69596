@@ -5,6 +5,6 @@ WORKDIR /app
 COPY Cargo.toml ./
 COPY src ./src
 RUN cargo check
-RUN sed -i -e /xyz/d src/lib.rs
+RUN sed -i -e /DELETE/d src/lib.rs
 ENV RUST_BACKTRACE=1
 RUN cargo check

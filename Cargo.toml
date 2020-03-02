@@ -5,7 +5,3 @@ authors = ["RobbieClarken <robbie.clarken@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-macros = { path = "macros" }
-
-[workspace]
-members = ["macros", "macros-impl"]

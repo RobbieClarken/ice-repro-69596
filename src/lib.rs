@@ -1,5 +1,5 @@
 mod mod_a {
-    pub(crate) use macros::xyz;
+    pub(crate) use std::format as xyz;
 }
 
 mod mod_b;

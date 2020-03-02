@@ -3,7 +3,7 @@
 To trigger the issue:
 
 1. Run `cargo check`
-2. Delete the line that reads `pub(crate) use macros::xyz;` in `src/lib.rs`
+2. Delete the line that reads `pub(crate) use std::format as xyz;` in `src/lib.rs`
 3. Run `cargo check` again
 
 Alternatively, running the `./demo` script will reproduce the error inside a docker build.

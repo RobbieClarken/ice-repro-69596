@@ -5,10 +5,8 @@ mod mod_a {
 
     use crate::mod_b::*;
 
-    mod mod_c {
-        fn _foobar() {
-            use super::name_of_proc_macro;
-        }
+    fn _foobar() {
+        use name_of_proc_macro;
     }
 }
 
